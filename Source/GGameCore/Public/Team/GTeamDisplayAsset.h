@@ -1,0 +1,17 @@
+﻿// Copyright (c) 2025 cannot206.
+
+#pragma once
+
+#include "Engine/DataAsset.h"
+
+#include "GTeamDisplayAsset.generated.h"
+
+UCLASS(BlueprintType, Category = "Team", ClassGroup = "Team")
+class GGAMECORE_API UGTeamDisplayAsset : public UDataAsset
+{
+	GENERATED_BODY()
+
+public:
+	UPROPERTY(EditAnywhere, BlueprintReadOnly)
+	FText DisplayName;
+};
